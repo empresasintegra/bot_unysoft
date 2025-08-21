@@ -12,14 +12,18 @@
 
 1. Clona el repositorio:
 
-`git clone https://github.com/empresasintegra/bot_unysoft`
-`cd bot_unysoft`
+```
+git clone https://github.com/empresasintegra/bot_unysoft
+cd bot_unysoft
+```
 
 
 2. Crea y activa el entorno virtual:
 
-`python -m venv .envs`
-`.envs\Scripts\activate`
+```
+python -m venv .envs
+.envs\Scripts\activate
+```
 
 
 3. Instala las dependencias:
