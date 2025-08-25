@@ -41,7 +41,7 @@ Ejecuta el script para crear el ejecutable:
 Verifica que el ERP UnySOFT esté accesible y funcional durante la ejecución.
 
 
-### Archivo necesarios .env y anexos.xlsx
+### Archivo necesarios .env, anexos_crear.xlsx y anexos_modificar.xlsx
 
 <!-- 1. CONFIGURAR CREDENCIALES:
      * UNYSOFT_URL=https://www.unysofterp.cl/
@@ -51,10 +51,21 @@ Verifica que el ERP UnySOFT esté accesible y funcional durante la ejecución.
      * EMPRESA_OPERATIVA=tu_empresa
 
 2. ARCHIVO EXCEL:
-   - Tu archivo debe llamarse exactamente "anexos.xlsx"
+   - Tu archivo debe llamarse exactamente "anexos_crear.xlsx"
    - Columnas:
      * NIC
      * Título
      * Fecha Anexo
      * Fecha Término  
      * Descripción -->
+
+## 📁 Estructura de archivos
+bot_unysoft/
+├── crear_anexos.py                 ← Crear anexos
+├── modificar_anexos.py             ← Ejecuta la modificación de anexos
+├── unysoft_utils.py                ← Funciones reutilizables (login, buscar, etc.)
+├── anexos_crear.xlsx               ← Excel con NIC, Título, Fecha Anexo, Fecha Término y Descripción
+├── anexos_modificar.xlsx           ← Excel con NIC y Fecha Término
+├── log_crear_anexos.txt            ← Log generado automáticamente en la creación
+├── log_modificar_anexos.txt        ← Log generado automáticamente en la modificación
+└── crear_ejecutable_corregido.py   ← Crea el archivo ejecutable
