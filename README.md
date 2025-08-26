@@ -34,7 +34,9 @@ python -m venv .envs
 
 Ejecuta el script para crear el ejecutable:
 
-`python crear_ejecutable_corregido.py`
+`python crear_ejecutable.py crear` → genera BotCrearAnexos.exe
+
+`python crear_ejecutable.py modificar` → genera BotModificarAnexos.exe
 
 ## Notas adicionales
 
@@ -68,4 +70,5 @@ bot_unysoft/
 ├── anexos_modificar.xlsx           ← Excel con NIC y Fecha Término
 ├── log_crear_anexos.txt            ← Log generado automáticamente en la creación
 ├── log_modificar_anexos.txt        ← Log generado automáticamente en la modificación
+├── xxxxxx.png                      ← Imagen generada automáticamente en caso de error
 └── crear_ejecutable_corregido.py   ← Crea el archivo ejecutable
