@@ -62,6 +62,7 @@ Verifica que el ERP UnySOFT esté accesible y funcional durante la ejecución.
      * Descripción -->
 
 ## 📁 Estructura de archivos
+```
 bot_unysoft/
 ├── crear_anexos.py                 ← Crear anexos
 ├── modificar_anexos.py             ← Ejecuta la modificación de anexos
@@ -72,3 +73,4 @@ bot_unysoft/
 ├── log_modificar_anexos.txt        ← Log generado automáticamente en la modificación
 ├── xxxxxx.png                      ← Imagen generada automáticamente en caso de error
 └── crear_ejecutable_corregido.py   ← Crea el archivo ejecutable
+```

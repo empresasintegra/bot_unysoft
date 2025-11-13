@@ -12,7 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from unysoft_utils import (
     setup_driver, login_unysoft, seleccionar_empresa, buscar_nic,
-    seleccionar_fila_trabajador, cerrar_sesion
+    configurar_filtro_anexos, seleccionar_fila_trabajador, cerrar_sesion
 )
 
 # ========== CONFIG ==========
@@ -74,6 +74,9 @@ try:
 
     driver.get("https://www.unysofterp.cl/UnyRem/Anexo")
     wait.until(EC.presence_of_element_located((By.ID, "TablaTrabajadores")))
+    log("📂 Página de Anexos cargada.")
+
+    configurar_filtro_anexos(driver, wait, log)
 
     for idx, row in df.iterrows():
         nic = str(row["NIC"]).strip()
